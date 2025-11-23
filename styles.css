@@ -1,23 +1,49 @@
-/*  your css code here. If applicable */
+/* Background */
 body {
     font-family: Arial, sans-serif;
-    padding: 20px 40px;
+    margin: 0;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #f9f9f9, #ececec);
+    display: flex;
+    justify-content: center;
 }
 
+/* Container */
 ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 25px 35px;
+    width: 420px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
+/* Item styling */
 li {
-    font-size: 22px;
-    padding: 18px 0;
+    font-size: 20px;
+    padding: 18px 10px;
     border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.25s ease;
 }
 
+/* Last item should not have border */
+li:last-child {
+    border-bottom: none;
+}
+
+/* Bullet */
 li::before {
     content: "▪ ";
     margin-right: 10px;
-    color: black;
+    color: #000;
+}
+
+/* Hover effect */
+li:hover {
+    background: #f6f6f6;
+    transform: translateX(6px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-radius: 8px;
 }
